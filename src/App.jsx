@@ -14,8 +14,9 @@ const buttons = [
   },
 ];
 
+// I will admit I stink at Map I need to get a lot better... I hate this....
 function App() {
-  const state = {};
+  // TODO: MAPm
   return (
     <>
       <h1 className="mt-8 text-center uppercase text-red-500">
