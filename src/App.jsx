@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import ButtonCounter from "./components/ButtonCounter";
 
@@ -22,13 +21,9 @@ function App() {
       <h1 className="mt-8 text-center uppercase text-red-500">
         Button Counter
       </h1>
-      // TODO: Make sure MAP function works and then delete these buttons
-      <ButtonCounter />
-      <ButtonCounter />
-      <ButtonCounter />
-      <ButtonCounter />
-      <ButtonCounter />
-      <ButtonCounter />
+      {buttons.map(({ txt }) => (
+        <ButtonCounter txt={txt} />
+      ))}
     </>
   );
 }
